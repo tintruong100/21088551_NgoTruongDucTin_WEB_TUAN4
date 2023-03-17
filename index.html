@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
         #wrapper {
             display: flex;
             justify-content: center;
@@ -20,7 +24,9 @@
         
         #center {
             width: 910px;
-            background-color: bisque;
+            border-left: 1px solid rgb(239, 241, 243);
+            border-right: 1px solid rgb(239, 241, 243);
+            padding: 30px;
         }
         
         #right {
@@ -58,6 +64,39 @@
         #setting {
             margin-top: 36px;
         }
+        
+        #meeting_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        #meeting_title div {
+            color: red;
+            border: 1px solid red;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+        }
+        
+        #internal {
+            display: flex;
+            align-items: center;
+            background-color: #E34D73;
+            width: fit-content;
+            padding: 5px;
+        }
+        
+        #internal img {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 0px 3px 0px 3px;
+            padding: 3px;
+        }
+        
+        #internal p {
+            margin: 0px;
+        }
     </style>
 </head>
 
@@ -78,7 +117,18 @@
                     <img id="setting" src="icon\setting.png" width="44" alt="">
                 </div>
             </div>
-            <div id="center">center</div>
+            <div id="center">
+                <div id="meeting_title">
+                    <h2>Meeting title</h2>
+                    <div>&#11044; 12:00</div>
+                </div>
+                <div id="meeting_info">
+                    <div id="internal">
+                        <img src="icon\user.png" alt="">
+                        <p>Internal</p>
+                    </div>
+                </div>
+            </div>
             <div id="right">right</div>
 
         </div>
